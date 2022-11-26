@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UZq-qA-iQz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UZq-qA-iQz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="280" translatesAutoresizingMaskIntoConstraints="NO" id="44F-y2-FIZ">
-                                <rect key="frame" x="120" y="338" width="174" height="480"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="44F-y2-FIZ">
+                                <rect key="frame" x="120" y="342" width="174" height="400"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인생은 랜덤" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClI-wN-iCI">
                                         <rect key="frame" x="0.0" y="0.0" width="174" height="30"/>
@@ -27,7 +27,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h90-gA-8D2">
-                                        <rect key="frame" x="0.0" y="310" width="174" height="170"/>
+                                        <rect key="frame" x="0.0" y="230" width="174" height="170"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb8-Mz-TLG">
                                                 <rect key="frame" x="0.0" y="0.0" width="174" height="70"/>
@@ -83,11 +83,11 @@
             <objects>
                 <viewController id="7nj-Il-hga" customClass="SecondViewController" customModule="WAYGTDToday" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qQv-vG-Jf1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-Rn-zzc">
-                                <rect key="frame" x="47" y="244" width="320" height="446"/>
+                                <rect key="frame" x="47" y="248" width="320" height="446"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awI-Ag-UT5">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
@@ -112,12 +112,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 뭐하지?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCG-mh-sEA">
+                                <rect key="frame" x="146" y="128" width="122" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5n2-MH-uhk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UGm-Rn-zzc" firstAttribute="top" secondItem="5n2-MH-uhk" secondAttribute="top" constant="200" id="28d-nm-TNs"/>
+                            <constraint firstItem="XCG-mh-sEA" firstAttribute="centerX" secondItem="qQv-vG-Jf1" secondAttribute="centerX" id="DAi-Pj-xah"/>
                             <constraint firstItem="UGm-Rn-zzc" firstAttribute="centerX" secondItem="qQv-vG-Jf1" secondAttribute="centerX" id="eJ2-Vj-n4s"/>
+                            <constraint firstItem="XCG-mh-sEA" firstAttribute="top" secondItem="5n2-MH-uhk" secondAttribute="top" constant="80" id="tpZ-Zk-zOJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OU1-Hr-Fhg"/>
@@ -134,11 +142,11 @@
             <objects>
                 <viewController id="bYZ-DW-Ob6" customClass="ThirdViewController" customModule="WAYGTDToday" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="06j-KT-q0u">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="8I8-If-7Od">
-                                <rect key="frame" x="47" y="244" width="320" height="446"/>
+                                <rect key="frame" x="47" y="248" width="320" height="446"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2z-jx-DTc">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
@@ -164,12 +172,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 뭐 먹지?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-Bn-Wmd">
+                                <rect key="frame" x="143.5" y="128" width="127" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jGZ-Ec-YIZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8I8-If-7Od" firstAttribute="top" secondItem="jGZ-Ec-YIZ" secondAttribute="top" constant="200" id="9Q2-Kg-uEb"/>
                             <constraint firstItem="8I8-If-7Od" firstAttribute="centerX" secondItem="06j-KT-q0u" secondAttribute="centerX" id="B6h-H4-XZy"/>
+                            <constraint firstItem="GhM-Bn-Wmd" firstAttribute="centerX" secondItem="06j-KT-q0u" secondAttribute="centerX" id="WBj-ZB-WwL"/>
+                            <constraint firstItem="GhM-Bn-Wmd" firstAttribute="top" secondItem="jGZ-Ec-YIZ" secondAttribute="top" constant="80" id="zFO-r3-ZXs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -186,7 +202,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UZq-qA-iQz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q2N-4S-Nj2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
