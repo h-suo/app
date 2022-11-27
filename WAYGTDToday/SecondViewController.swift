@@ -20,7 +20,8 @@ class SecondViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                           "방탈출",
                           "PC방",
                           "모텔",
-                          "당구장"]
+                          "당구장",
+                          "백화점"]
     
     @IBOutlet weak var pickerView: UIPickerView!
     override func viewDidLoad() {
